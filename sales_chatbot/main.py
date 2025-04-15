@@ -1,10 +1,12 @@
 import streamlit as st
 import requests
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
-API_URL = "http://localhost:8000"  # Change this to your API URL when deploying
+# Use environment variable for API URL, fallback to localhost for development
+API_URL = os.getenv('API_URL', 'http://localhost:8000')
 
 st.set_page_config(page_title="Sales Inventory Chatbot", page_icon=":speech_balloon:")
 
