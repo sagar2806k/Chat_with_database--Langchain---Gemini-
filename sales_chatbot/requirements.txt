@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-community
+langchain-google-genai
+langchain-experimental
+google-generativeai
+mysql-connector-python
+python-dotenv
+fastapi
+uvicorn
+pydantic
+requests
